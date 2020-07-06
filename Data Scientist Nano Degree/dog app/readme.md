@@ -5,7 +5,8 @@ The goal of this project is to use a CNN to classify dog breeds. The steps are t
 # Files included:
 - dog-app.ipynb is the python 3 file that can be run to classify dog images
 - The test_images folder has the test images for this project.
-- The saved_models folder contains the models saved during this project
+- The saved models weights folder contains the models saved during this project
+- haarcascades folder contains the Opencv's haarcascasde pretrained model
 
 # Library used:
 - Scikit_learn
