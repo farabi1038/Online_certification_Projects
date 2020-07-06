@@ -3,9 +3,9 @@
 The goal of this project is to use a CNN to classify dog breeds. The steps are the classification of an image as a dog or a human,later, a prediction of which dog breed the dog is if classified as a dog, or which dog breed the human most look like. If the image is detected  neither as a dog nor as a human, the classifier will not say it.
 
 # Files included:
-dog-app.ipynb is the python 3 file that can be run to classify dog images
-The test_images folder has the test images for this project.
-The saved_models folder contains the models saved during this project
+- dog-app.ipynb is the python 3 file that can be run to classify dog images
+- The test_images folder has the test images for this project.
+- The saved_models folder contains the models saved during this project
 
 # Library used:
 - Scikit_learn
