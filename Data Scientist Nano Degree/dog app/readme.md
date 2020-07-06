@@ -21,3 +21,6 @@ https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz
 # Result Summary
 
  The pre-train model's performance was way more better  the hand the CNN made from scratch. The accuracy of ResNet-50 (pre-trained on ImageNet) reached 85% whereas  CNN from scratch was 4%. This drastical improvement was happened because of the huge dataset from Imagenet on which ResNet-50 model was pretrained on. ImageNet has huge amount of data and also the complexity of ResNet helped a lot reach this accuracy of 85% from 4%.
+ 
+ # Medium link of project walkthrough:
+ https://medium.com/@ibnfarabishihab3/dog-breed-classifier-udacity-data-scientist-nano-degree-blog-8bf4702d4cf2
