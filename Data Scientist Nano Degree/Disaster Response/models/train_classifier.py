@@ -109,6 +109,14 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    """
+    Func: save the model as pickle file.
+    Args:
+      model:final model
+      model_filepath: place to save the model
+    Return:
+      There is not any
+    """
     with open(model_filepath, 'wb') as f:
         pickle.dump(model, f)
 
