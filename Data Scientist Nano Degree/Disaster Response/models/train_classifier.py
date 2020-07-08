@@ -65,7 +65,7 @@ def tokenize(text):
 
 def build_model():
     """
-    Func:  building the pipeline for the model
+    Function:  building the pipeline for the model
     Args:
       There is not any
     Return
@@ -73,22 +73,32 @@ def build_model():
     """
     pipeline = Pipeline([
     ('vect',TfidfVectorizer(tokenizer=tokenize)),
-    ('clf', RandomForestClassifier(n_estimators=150,max_features=0.1))])
-    return pipeline
+    ('clf', MultiOutputClassifier(RandomForestClassifier(n_estimators=200,random_state=20)))])
+    
+    parameters = {
+    "vect__ngram_range": [(1,1), (1,2), (1,5)],
+    "vect__stop_words": [None, "english"],
+    "vect__use_idf": [True, False],
+    'clf__estimator__n_estimators': [10, 50, 100,200],
+    'clf__estimator__max_features': [0.01, 0.05, 0.1],}
+    cv = GridSearchCV(pipeline,
+                  param_grid=parameters,
+                  n_jobs=-1)
+    return cv
     
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
     
     """
-    Func: evaluate model
+    Function: evaluate model
     Args:
       model,
       X_test: X test dataset
       Y_test: y test dataset
       category_names:category names of y
     Return
-      There is not any
+      N/A
     """
     Y_pred = pd.DataFrame(model.predict(X_test),
                       index=Y_test.index,
@@ -99,19 +109,12 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-    """
-    Func: save the model as pickle file.
-    Args:
-      model:final model
-      model_filepath: place to save the model
-    Return:
-      There is not any
-    """
     with open(model_filepath, 'wb') as f:
         pickle.dump(model, f)
 
 
 def main():
+    print(sys.argv)
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
@@ -136,4 +139,6 @@ def main():
         print('Please provide the filepath of the disaster messages database '\
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db
+              'train_classifier.py ../data/DisasterResponse.db' )
+if __name__ == '__main__':
+    main()
