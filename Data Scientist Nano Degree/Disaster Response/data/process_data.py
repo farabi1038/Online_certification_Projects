@@ -74,7 +74,7 @@ def save_data(df, database_filename):
     Return:
         There is no return for this function
     """
-    engine = create_engine('sqlite:///'+ 'data/'+str (database_filename))
+    engine = create_engine('sqlite:///'+str (database_filename))
     df.to_sql('Message', engine, index=False, if_exists = 'replace')
     
 
