@@ -65,7 +65,7 @@ def tokenize(text):
 
 def build_model():
     """
-    Function:  building the pipeline for the model
+    Func:  building the pipeline for the model
     Args:
       There is not any
     Return
@@ -81,14 +81,14 @@ def build_model():
 def evaluate_model(model, X_test, Y_test, category_names):
     
     """
-    Function: evaluate model
+    Func: evaluate model
     Args:
       model,
       X_test: X test dataset
       Y_test: y test dataset
       category_names:category names of y
     Return
-      N/A
+      There is not any
     """
     Y_pred = pd.DataFrame(model.predict(X_test),
                       index=Y_test.index,
@@ -99,6 +99,14 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    """
+    Func: save the model as pickle file.
+    Args:
+      model:final model
+      model_filepath: place to save the model
+    Return:
+      There is not any
+    """
     with open(model_filepath, 'wb') as f:
         pickle.dump(model, f)
 
