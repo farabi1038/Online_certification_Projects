@@ -26,7 +26,7 @@ This is plot of rewards when training.
 At Episode 616, agent performance met the criteria and stopped training.
 (The mean score of last 100 episodes is more than +15)
 
-![plot of rewards](./score_graph.jpg)
+![plot of rewards](./index.png)
 
 # Ideas for Future Work
 For further performance improvement, I wish to implement the DDQN algorithm. [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
