@@ -23,7 +23,7 @@ The value of epsilon is set 0.999, and decrease gradually with time until 0.001.
 
 # Rewards Result
 This is plot of rewards when training.
-At Episode 579, agent performance met the criteria and stopped training.
+At Episode 616, agent performance met the criteria and stopped training.
 (The mean score of last 100 episodes is more than +15)
 
 ![plot of rewards](./score_graph.jpg)
