@@ -25,10 +25,10 @@ Deep Q network:
 - Linear layer (in: 64, out: number of actions)
 
 Rewards per episode with sampled replay buffer:
-![Q Network with sampled replay buffer](q_sample.png)
+![Q Network with sampled replay buffer](./q_sample.png)
 
 Rewards per episode with prioritized replay buffer:
-![Q Network with prioritized replay buffer](q_prio.png)
+![Q Network with prioritized replay buffer](./q_prio.png)
 
 
 
@@ -36,11 +36,7 @@ Rewards per episode with prioritized replay buffer:
 Noisy linear layer is similar to standard linear layer (Wx + b) but W and b matrices contains random noise 
 with normal distribution sampled on each step. 
 
-Rewards per episode with sampled replay buffer:
-![Dueling Network with Noisy Net with sampled replay buffer](plots/nd_sample.png)
 
-Rewards per episode with prioritized replay buffer:
-![Dueling Network with Noisy Net with prioritized replay buffer](plots/nd_prio.png)
 
 ## Comparison table
 
