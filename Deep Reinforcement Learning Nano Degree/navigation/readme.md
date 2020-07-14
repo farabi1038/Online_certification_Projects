@@ -34,3 +34,8 @@ For further performance improvement, I wish to implement the DDQN algorithm. [De
 
 # Trained model
 [Trained model (DDQN)](./checkpoint.pth)
+
+# Getting started 
+
+
+To train the agent, start jupyter notebook, open navigation.ipynb and execute! For more information, please check instructions inside the notebook.
