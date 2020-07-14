@@ -4,7 +4,7 @@
 
 |Name|Value|
 |---|---:|
-|Episodes|750|
+|Episodes|616|
 |Epsilon start|1.0|
 |Epsilon decay|0.99|
 |Epsilon end|0.01|
@@ -25,10 +25,10 @@ Deep Q network:
 - Linear layer (in: 64, out: number of actions)
 
 Rewards per episode with sampled replay buffer:
-![Q Network with sampled replay buffer](plots/q_sample.png)
+![Q Network with sampled replay buffer](q_sample.png)
 
 Rewards per episode with prioritized replay buffer:
-![Q Network with prioritized replay buffer](plots/q_prio.png)
+![Q Network with prioritized replay buffer](q_prio.png)
 
 
 
