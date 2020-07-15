@@ -40,7 +40,8 @@ At Episode 670, agent performance met the criteria and stopped training.
 
 
 # Trained model
-[Trained model (DDQN)](./model)
+[Trained model (DDQN,actor)](./checkpoint_actor.pth)
+[Trained model (DDQN,critic)](./checkpoint_actor.pth)
 
 
 
