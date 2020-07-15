@@ -21,9 +21,9 @@ For activation function Relu was used for the hidden layers but Tanh and relu wa
 The structure of the network is: state -> fc layer 1 -> fc layer 2 -> output layer. In case of code implementation, I followed almost the same network from the exercises in the nano degree which is well explianed in the contents. 
 
 ## Result and Issues:
-The plot or rewards for the given settings is givne below :
+The plot or rewards for the given settings is given :
 ![plot of rewards](./scores.png)
-
+# Issues
 - The network seems to be very slow at the starting though it started to pick up in the later part.
 - Using batch normalizati0n did not help that much in the model.
 
