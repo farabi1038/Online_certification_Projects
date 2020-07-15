@@ -14,6 +14,8 @@ The following hyper parameters has been used for the experiment purpose:
 
 ## [DDPG](https://deepmind.com/research/publications/continuous-control-deep-reinforcement-learning/)
 
+DDPG is an algorithm learns a q-function and a policy at simultaniously.  Off-policy and Bellman equation are being used to learn the Q-function, and q-function is being used to learn the policy.
+
 I have not tried many variations. I started with default setup of DDPG in the paper.It seems to work well as it gained my expected score of 30 in 670 episodes. 
 Hence, I have not gone for different variations.
 The network for actor and critic was 3 layer based. 2 fully connected layers with 64 units and the last layer with 4 units according to the observation space though for the critic the output size is 1.
