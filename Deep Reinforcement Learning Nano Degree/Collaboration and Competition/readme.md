@@ -1,12 +1,10 @@
 
 
 # Summary
-In this report, the result from the navigation project is presdented usinfg a **DQN**.
+In this report, the result from the navigation project is presdented using a **DDPG and MADDPG**.
 
 ## Project's Description 
-For this project we have to train an agent to navigate a large square world and collect yellow bananas. The world contains both yellow and blue banana as depicted in the animated gif below.
-![In Project 1, train an agent to navigate a large world.](images/banana.gif)
-
+In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
 ### Rewards:
 - If an agent hits the ball over the net, it receives a reward of +0.1. 
 - If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.
@@ -32,8 +30,8 @@ Source code of learning algorithm is placed in the root directory of the project
 
 # Rewards Result
 This is plot of rewards when training.
-At Episode 616, agent performance met the criteria and stopped training.
-(The mean score of last 100 episodes is more than +15)
+At Episode 2293, agent performance met the criteria and stopped training.
+(The mean score of last 100 episodes is more than +0.5)
 
 ![plot of rewards](./reward.png)
 
