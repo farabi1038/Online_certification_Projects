@@ -71,10 +71,13 @@ After you have followed the instructions above,to train the agent, start jupyter
 
 ### Train a agent
 There are 2 options for training the Agent:
-1. Execute the provided notebook within this Nanodegree Udacity Online Workspace for "project #2  Continuous Control".
+1. Execute the provided notebook within this Nanodegree Udacity Online Workspace for "project #2  Continuous_Control.ipynb".
 1. Or build your own local environment and make necessary adjustements for the path to the UnityEnvironment in the code.
 
 Note: that the Workspace does not allow you to see the simulator of the environment; so, if you want to watch the agent while it is training, you should train locally.
 
+# Running the code:
+
+After setting up the environemnt keep every file as structures in the github repo. Navigate to Continuous_Control.ipynb and run it using a jupyter notebook.
 
 
