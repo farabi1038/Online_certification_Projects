@@ -71,7 +71,7 @@ After you have followed the instructions above,to train the agent, start jupyter
 
 ### Train a agent
 There are 2 options for training the Agent:
-1. Execute the provided notebook within this Nanodegree Udacity Online Workspace for "project #1  Navigation".
+1. Execute the provided notebook within this Nanodegree Udacity Online Workspace for "project #2  Continuous Control".
 1. Or build your own local environment and make necessary adjustements for the path to the UnityEnvironment in the code.
 
 Note: that the Workspace does not allow you to see the simulator of the environment; so, if you want to watch the agent while it is training, you should train locally.
