@@ -12,8 +12,7 @@ The following hyper parameters has been used for the experiment purpose:
 |Batch size|200|
 |Target|30.0|
 |UPDATE_EVERY_NB_EPISODE| 4|        
-MULTIPLE_LEARN_PER_UPDATE = 3   
-                
+MULTIPLE_LEARN_PER_UPDATE| 3|   
 |ACTOR_FC1_UNITS|400|       
 |ACTOR_FC2_UNITS|300|        
 |CRITIC_FCS1_UNITS| 400|      
