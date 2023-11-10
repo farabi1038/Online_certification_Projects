@@ -195,19 +195,15 @@ CALL CancelOrder(5);
 ## Data Analysis with Tableau
 A Tableau workbook with charts and dashboards for easy data analysis was created. The workbook [here](./tab.twb)
 
-### Customers sales
-![Customers sales](./Images/tab_task1.png)
+### Customers sales in /Images/tab_task1.png
 
 ### Profit chart
-![Profit chart](./Images/tab_task2.png)
+Profit chart in /Images/tab_task2.png
 
-### Sales Bubble Chart
-![Sales Bubble Chart](./Images/tab_task3.png)
+### Sales Bubble Chart in /Images/tab_task3.png
 
-###  Cuisine Sales and Profits
-![ Cuisine Sales and Profits](./Images/tab_task4.png)
+###  Cuisine Sales and Profits in /Images/tab_task4.png)
 
-### Dashboard
-![dashboard](./Images/tab_task5.png)
+### Dashboard in /Images/tab_task5.png)
 
 
